@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function count(a, b) {//vamos a toma un string y un caracter y contaremos las incidencias de dicho caracter dentro del string
+      let charCount = 0;
+      for (let ii = 0; ii < b.length; ii++) { //toma in indice y recorre la cadena desde 0 hasta el final
+        if (b[ii] === a) {// el string en la posicion del indice
+          charCount++;
+        }
+      }
+
+      if (charCount === 0) {
+        return alert("no existen coincidencias con: " + a);
+      }
+      return alert(charCount);
+    }
+    const b = "pablito clavo  un clavito"
+    const a = prompt("Incerte el caracter")
+    a && count(a, b);// se llama la funcion
+  </script>
+</body>
+
+</html>
